@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- My own stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Rock, Paper, Scissors</title>
+
+</head>
+
+<body>
+
+<!-- Header -->
+  <div class="container header">
+    <div class="row" id="intro">
+      <div class="col-lg-4 col-sm-6">
+        <img src="./images/logo.svg" alt="logo">
+      </div>
+      <div class="col-lg-6 col-sm-1">
+      </div>
+      <div class="col-lg-2 col-sm-5 score">
+        <p>SCORE</p>
+        <h1 id="score">0</h1>
+      </div>
+    </div>
+  </div>
+
+<!-- initial screen -->
+  <div class="container images">
+    <img src="./images/bg-triangle.svg" alt="triangle">
+      <div class="circle rock">
+        <img class="obj-img" src="./images/icon-rock.svg" alt="rock">
+      </div>
+      <div class="circle scissors">
+        <img class="obj-img" src="./images/icon-scissors.svg" alt="scissors">
+      </div>
+      <div class="circle paper">
+        <img class="obj-img" src="./images/icon-paper.svg" alt="paper">
+      </div>
+  </div>
+
+<!-- screen after picking -->
+  <div class="container picked">
+    <h5 id="you">YOU PICKED</h5>
+    <div id="your-choice">
+    </div>
+    <div class="play-again">
+      <button id="play-again-button" type="button" name="button">
+        <span style="color:red; margin:1.3rem 1.5rem">PLAY AGAIN</span>
+      </button>
+    </div>
+    <h5 id="house">THE HOUSE PICKED</h5>
+    <div id="house-choice" class="circle-tmp house-picked">
+    </div>
+  </div>
+
+
+<!-- Game rules, only displayed when the rules button gets clicked -->
+<div class="container game-rules">
+  <span>
+    <h3>RULES</h3>
+    <button id="close-rules" type="button" name="button">
+      <span style="color:#C0C0C0; font-size:22px">X</span>
+    </button>
+  </span>
+    <img src="./images/image-rules.svg" alt="rules">
+</div>
+
+
+<!-- Rules button -->
+  <div class="container rules-button">
+    <button id="rules" type="button" name="button">
+      <span style="color:white; margin:1.3rem 1.5rem">Rules</span>
+    </button>
+  </div>
+
+
+<!-- Footer -->
+  <footer>
+    <div class="attribution">
+      <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
+      <p>Coded by <a href="#">André Nascimento</a>.</p>
+    </div>
+  </footer>
+
+<!-- Javascript scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="index.js" charset="utf-8"></script>
+
+</body>
+
+</html>

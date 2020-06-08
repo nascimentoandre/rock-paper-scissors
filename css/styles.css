@@ -1,0 +1,205 @@
+body {
+  background-color: #0d006e;
+  background-image: url("./asfalt-light.png");
+  font-family: 'Lato', sans-serif;
+}
+
+h5 {
+  color: white;
+}
+
+.attribution {
+  color: white;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #50d4eb;
+}
+
+.elements {
+  position: relative;
+}
+
+.circle, .circle-tmp {
+  background-color: white;
+  border-radius: 50%;
+  width: 8rem;
+  height: 8rem;
+}
+
+.circle-tmp {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header {
+  border-radius: 25px;
+  margin-top: 5rem;
+  border: 0.15rem solid rgba(169, 169, 169, 0.5);
+}
+
+.images, .picked {
+  text-align: center;
+  margin-top: 8rem;
+  margin-bottom: 2rem;
+  height: 19rem;
+  width: 20rem;
+}
+
+.picked {
+  display: none;
+  width: 40rem;
+}
+
+.obj-img {
+  position: relative;
+  margin-top: 1.7rem
+}
+
+.paper, .paper-picked {
+  border: 8.5px solid #3f53b8;
+  position: relative;
+  bottom: 35rem;
+  right: 1rem
+}
+
+.house-paper-picked {
+  border: 8.5px solid #3f53b8
+}
+
+.house-rock-picked {
+  border: 8.5px solid #8a322f
+}
+
+.house-scissors-picked {
+  border: 8.5px solid #d6bf49
+}
+
+.rock, .rock-picked {
+  border: 8.5px solid #8a322f;
+  position: relative;
+  bottom: 8rem;
+  left: 6rem;
+}
+
+.rock:hover, .paper:hover, .scissors:hover {
+  box-shadow: 10px 10px;
+}
+
+.rules-button {
+  margin-bottom: 7rem;
+  margin-top: 4rem;
+  text-align: right;
+  position: relative;
+  right: 11.5rem;
+}
+
+.scissors, .scissors-picked {
+  border: 8.5px solid #d6bf49;
+  position: relative;
+  bottom: 27rem;
+  left: 12rem;
+}
+
+.score {
+  border-radius: 25px;
+  background-color: white;
+  padding: 0;
+}
+
+.score p {
+  color: #0065b3;
+  text-align: center;
+  margin-top: 0.7rem;
+  margin-bottom: 0
+}
+
+.score h1 {
+  text-align: center;
+}
+
+.game-rules {
+  bottom: 24rem;
+  background-color: white;
+  display: none;
+  height: 22rem;
+  position: relative;
+  border-radius: 10%;
+  text-align: left;
+  width: 24rem;
+  z-index: 1;
+  margin-bottom: -24rem;
+}
+
+.game-rules span button {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px;
+  position: relative;
+  bottom: 10rem;
+  left: 19.5rem;
+}
+
+.game-rules span h3 {
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+  margin-bottom: 0.8rem;
+}
+
+.rock-picked, .scissors-picked, .paper-picked {
+  top: 5rem;
+  left: 2rem;
+}
+
+.house-picked {
+  position: relative;
+  left: 27.5rem;
+  bottom: 5rem;
+}
+
+.play-again {
+  display: none;
+  position: relative;
+  bottom: 2rem;
+  right: 0.6rem;
+  z-index: 1;
+}
+
+.play-again h1 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.play-again button {
+  background-color: white;
+  border-radius: 10%;
+}
+
+#intro {
+  margin: 0.5rem;
+}
+
+#rules {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1.5px solid #A9A9A9;
+  border-radius: 10%;
+}
+
+#rules:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: black;
+}
+
+#you, #house {
+  position: relative;
+}
+
+#house {
+  bottom: 7rem;
+  left: 11.5rem;
+}
+
+#you {
+  top: 3rem;
+  right: 13.5rem;
+}
